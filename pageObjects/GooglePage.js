@@ -1,4 +1,4 @@
-class Storage {
+class GooglePage {
     constructor (page){
         this.page = page;
     }
@@ -7,7 +7,7 @@ class Storage {
         await this.page.goto(url);
     }
 
-    async search(searchTerm){
+    async search(searchTerm) {
         await this.page.locator('.gLFyf').fill(searchTerm);
         await this.page.locator('.gNO89b').first().click();
     }
@@ -17,11 +17,6 @@ class Storage {
         await this.page.pause();
     }
 
-    async titles(){
-        return await this.page.locator('h3').allTextContents();
-    }
-
 }
 
-
-module.exports = Storage;
+module.exports = GooglePage;
