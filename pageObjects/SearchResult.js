@@ -1,10 +1,11 @@
 class SearchResult {
     constructor (page){
         this.page = page;
+        this.resultTitles = page.locator('h3');
     }
 
     async titles(){
-        return await this.page.locator('h3').allTextContents();
+        return await this.resultTitles.allTextContents();
     }
 
 }

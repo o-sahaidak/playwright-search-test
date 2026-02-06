@@ -1,6 +1,8 @@
 class GooglePage {
     constructor (page){
         this.page = page;
+        this.searchInput = page.locator('.gLFyf');
+        this.searchButton = page.locator('.gNO89b').first();
     }
 
     async link(url){
@@ -8,8 +10,8 @@ class GooglePage {
     }
 
     async search(searchTerm) {
-        await this.page.locator('.gLFyf').fill(searchTerm);
-        await this.page.locator('.gNO89b').first().click();
+        await this.searchInput.fill(searchTerm);
+        await this.searchButton.click();
     }
 
     async captcha(){
