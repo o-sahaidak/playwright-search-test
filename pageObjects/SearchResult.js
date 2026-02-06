@@ -4,7 +4,7 @@ class SearchResult {
         this.resultTitles = page.locator('h3');
     }
 
-    async titles(){
+    async getAllTitles(){
         return await this.resultTitles.allTextContents();
     }
 
