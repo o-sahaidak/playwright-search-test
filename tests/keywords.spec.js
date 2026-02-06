@@ -1,5 +1,5 @@
 const {test, expect} = require('@playwright/test');
-
+const Storage = require('../pageObjects/Storage');
 
 test('search results contain keyword in titles', async ({ page })=>
 {
@@ -20,4 +20,24 @@ test('search results contain keyword in titles', async ({ page })=>
   });
   console.log(titlesWeNeed);
   
+});
+
+
+test.only('PageObject', async ({ page })=>
+{
+  const searchTerm = test.info().project.name; 
+  const url = test.info().project.use.baseURL;
+
+  const storage = new Storage(page);
+
+  await storage.link(url);
+  await storage.search(searchTerm);
+  await storage.captcha();
+  const allTitles = await storage.titles();
+
+  const titlesWeNeed = allTitles.filter(title => title.includes(searchTerm));
+  expect(titlesWeNeed.length, `There are 0 titles with word: "${searchTerm}"`).toBeGreaterThan(0);
+  console.log(titlesWeNeed)
+  
+   
 });

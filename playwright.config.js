@@ -34,8 +34,20 @@ export default defineConfig({
   },
 
   projects: [
-    {name: 'Java'},
-    {name: 'JavaScript'}
+    {
+      name: 'Java',
+      use : { baseURL: 'https://www.google.com/?hl=en'} 
+    },
+
+    {
+      name: 'JavaScript',
+      use : { baseURL: 'https://www.google.com/?hl=en'} 
+    },
+
+    {
+      name: 'sovihbfSIISVJJHSJVJ', // For a successful fail
+      use : { baseURL: 'https://www.google.com/?hl=en'} 
+    },
   ]
 
   
