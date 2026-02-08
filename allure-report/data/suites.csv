@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","26349","search results contain keyword - page object with steps","Java","2026-02-08","passed","2026-02-08","","keywords.spec.js","",""
+"","24093","search results contain keyword - page object pattern","sovihbfSIISVJJHSJVJ","2026-02-08","failed","2026-02-08","","keywords.spec.js","",""
+"","14856","search results contain keyword - page object with steps","JavaScript","2026-02-08","passed","2026-02-08","","keywords.spec.js","",""
+"","19319","search results contain keyword - page object pattern","JavaScript","2026-02-08","passed","2026-02-08","","keywords.spec.js","",""
+"","20083","search results contain keyword - page object with steps","sovihbfSIISVJJHSJVJ","2026-02-08","failed","2026-02-08","","keywords.spec.js","",""
+"","19959","search results contain keyword - page object pattern","Java","2026-02-08","passed","2026-02-08","","keywords.spec.js","",""

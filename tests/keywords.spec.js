@@ -20,12 +20,11 @@ test('search results contain keyword in titles', async ({ page })=>
   titlesWeNeed.forEach(title => {
     expect(title).toContain(query);
   });
-  console.log(titlesWeNeed);
-  
+  console.log(titlesWeNeed); 
 });
 
 
-test.only('search results contain keyword - page object pattern', async ({ page })=>
+test('search results contain keyword - page object pattern', async ({ page })=>
 {
   const query = test.info().project.name; 
   const url = test.info().project.use.baseURL;
@@ -41,7 +40,34 @@ test.only('search results contain keyword - page object pattern', async ({ page 
 
   const titlesWeNeed = allTitles.filter(title => title.includes(query));
   expect(titlesWeNeed.length, `There are 0 titles with word: "${query}"`).toBeGreaterThan(0);
-  console.log(titlesWeNeed)
-  
-   
+  console.log(titlesWeNeed)  
+});
+
+
+test.only('search results contain keyword - page object with steps', async ({ page })=>
+{
+  const query = test.info().project.name; 
+  const url = test.info().project.use.baseURL;
+
+  const googlePage = new GooglePage(page);
+  const searchResult = new SearchResult(page);
+
+  await test.step('Open Google page', async () =>{
+    await googlePage.goto(url);
+  });
+
+  await test.step(`Search for "${query}"`, async () =>{
+    await googlePage.search(query);    
+  });
+
+  await test.step('Solve captcha', async () =>{
+    await googlePage.solveCaptcha();    
+  });
+
+  await test.step('Verify search results', async () =>{
+    const allTitles = await searchResult.getAllTitles();
+    const titlesWeNeed = allTitles.filter(title => title.includes(query));
+    expect(titlesWeNeed.length, `There are 0 titles with word: "${query}"`).toBeGreaterThan(0);
+    console.log(titlesWeNeed)
+  });   
 });

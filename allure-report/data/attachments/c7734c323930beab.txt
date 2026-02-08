@@ -1,0 +1,16 @@
+Solve the CAPTCHA manually and then press Resume(F8)
+[
+  'JavaScript - MDN Web Docs - Mozilla',
+  'JavaScript',
+  'Сучасний підручник з JavaScript',
+  'JavaScript Tutorial',
+  'JavaScript',
+  'Learn JavaScript Online - Courses for Beginners - javascript ...',
+  'JavaScript Підручник. Основи веб-програмування',
+  'Современный учебник JavaScript',
+  'What Is JavaScript Used For? | ComputerScience.org',
+  'Enable JavaScript - Microsoft Support',
+  'JavaScript vs C++: 3 Factors to Choose Which Is Best for You',
+  'HTML vs. JavaScript: Definitions, Differences and Why They Matter',
+  'The Modern JavaScript Tutorial'
+]

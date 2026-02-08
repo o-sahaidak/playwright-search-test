@@ -1,0 +1,18 @@
+Solve the CAPTCHA manually and then press Resume(F8)
+[
+  'Java | Oracle',
+  'Download Java',
+  'Java',
+  'How do I install Java',
+  'Загрузка Java для Windows',
+  'Java (programming language)',
+  'Java',
+  'Java Downloads | Oracle ASEAN',
+  'Java Tutorial',
+  'Comparison of Java and C++ - Wikipedia',
+  'Java - Definition, Meaning & Synonyms - Vocabulary.com',
+  'Java vs Python: Code examples and comparison · Raygun Blog',
+  'Does Oracle Own Java: JDK Migrations & Oracle - Azul Systems',
+  'Java | Введение',
+  'Java'
+]
